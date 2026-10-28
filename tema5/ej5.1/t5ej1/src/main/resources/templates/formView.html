@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+    <form action="#" method="post" th:action="@{/}" th:object="${form}" >
+        <label>Operador 1<input type="number" id="operador1" th:field="*{operador1}"></label>
+        <label>Operador 2<input type="number" id="operador2" th:field="*{operador2}"></label>
+        <button type="submit">Sumar</button>
+    </form>
+</body>
+</html>
